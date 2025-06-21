@@ -4,8 +4,8 @@ from ..models.user import Usuario
 
 class AvatarSerializer(serializers.ModelSerializer):
     def validar_imagem(value):
-        if not value.name.endswith(('jpg', 'jpeg', 'png', 'gif')):
-            raise ValidationError('O arquivo deve ser uma imagem com extensão .jpg, .jpeg, .png ou .gif')
+        if not value.name.endswith(('jpg', 'jpeg', 'png', 'gif', 'webp')):
+            raise ValidationError('O arquivo deve ser uma imagem com extensão .jpg, .jpeg, .png, .gif ou .webp')
         if value.size > 5 * 1024 * 1024:  # Limite de 5MB
             raise ValidationError('O tamanho da imagem não pode ser maior que 5MB')
         return value

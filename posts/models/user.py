@@ -19,6 +19,7 @@ class UsuarioManager(BaseUserManager):
 
 class Usuario(AbstractBaseUser, PermissionsMixin):
     username = models.CharField(max_length=150, unique=True)
+    complet_name = models.CharField(max_length=150, blank=True)
     email = models.EmailField(unique=True)
     password = models.CharField(max_length=128)
     bio = models.TextField(blank=True)

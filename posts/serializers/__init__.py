@@ -4,3 +4,4 @@ from .get_user_serializer import GetUserSerializer
 from .updata_bio_serializer import UpdateBioSerializer
 from .followers_serializer import FollowersSerializer
 from .avatar_serializer import AvatarSerializer
+from .posts_serializer import UsuarioSerializer, ComentarioSerializer, PostSerializer

@@ -5,7 +5,7 @@ from ..models.user import Usuario
 class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Usuario
-        fields = ['id', 'username', 'email']
+        fields = ['id', 'username', 'email', 'avatar', 'complet_name']
 
 
 class ComentarioSerializer(serializers.ModelSerializer):
@@ -13,13 +13,12 @@ class ComentarioSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Comentario
-        fields = ['id', 'autor', 'texto', 'criado_em']
+        fields = ['id', 'autor', 'post', 'texto', 'criado_em']
 
 
 class PostSerializer(serializers.ModelSerializer):
     autor = UsuarioSerializer(read_only=True)
-    comentarios = ComentarioSerializer(many=True, read_only=True)
 
     class Meta:
         model = Post
-        fields = ['id', 'autor', 'conteudo', 'criado_em', 'comentarios']
+        fields = ['id', 'autor', 'conteudo', 'criado_em']

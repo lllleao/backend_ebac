@@ -14,8 +14,8 @@ from .views.avatar_views import AtualizarAvatarView
 
 router = routers.SimpleRouter()
 router.register(r'users', UserView, basename='users')
-router.register(r'posts', PostViewSet)
-router.register(r'comentarios', ComentarioViewSet)
+router.register(r'posts', PostViewSet, basename='posts')
+router.register(r'comentarios', ComentarioViewSet, basename='comentarios')
 
 urlpatterns = [
     path('', include(router.urls)),
