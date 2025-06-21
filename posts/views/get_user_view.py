@@ -9,4 +9,3 @@ class GetUserView(APIView):
         user = request.user
         serializer = GetUserSerializer(user)
         return Response(serializer.data)
-
