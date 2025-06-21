@@ -35,3 +35,7 @@ jobs:
       - name: Test
         run: |
           poetry run python manage.py test
+
+      - name: Run Django checks
+        run: |
+          poetry run python manage.py check
