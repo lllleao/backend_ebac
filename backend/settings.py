@@ -30,7 +30,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'lucaslima.pythonanywhere.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
