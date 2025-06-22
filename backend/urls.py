@@ -25,5 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('posts.urls')),
     path('update_server/', views.update, name="update"),
+    path("hello/", views.hello_world, name="hello_world"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
