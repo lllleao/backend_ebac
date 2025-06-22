@@ -59,6 +59,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://seusite.com",
+    "https://frontend-ebac-one.vercel.app"
 ]
 
 ROOT_URLCONF = 'backend.urls'
