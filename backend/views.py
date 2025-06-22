@@ -7,6 +7,7 @@ import git
 
 @csrf_exempt
 def update(request):
+    print("Metodo", request.method)
     if request.method == "POST":
         '''
         pass the path of the diectory where your project will be
