@@ -1,5 +1,8 @@
 # 🐦 Twitter Clone - Backend
 
+> ⚠️ **Aviso:** Este é apenas o backend do projeto. O frontend está disponível em:  
+> 🔗 [Repositório do Frontend](https://github.com/lllleao/frontend_ebac.git)
+
 Este é o backend de um clone simplificado do Twitter, desenvolvido com Django e Django REST Framework. A aplicação permite funcionalidades essenciais como criação de contas, autenticação, criação de posts e comentários, além de personalização de perfis com avatar e bio.
 
 ---
