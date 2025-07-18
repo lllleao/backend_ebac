@@ -59,7 +59,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://seusite.com",
-    "https://fake-social-network.vercel.app/"
+    "https://fake-social-network.vercel.app"
 ]
 
 ROOT_URLCONF = 'backend.urls'
